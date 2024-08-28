@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: hsl(217, 100%, 97%);
+    overflow: auto;
+}
+
+.container{
+    width: 700px;
+    height: 435px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.butons{
+    display: flex;
+    width: 100%;
+    margin-top: 3.5rem;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+.botao{
+    width: 100px;
+    height: 35px;
+    border-radius: .3rem;
+    border: none;
+    background-color: #02295a;
+    color: #fff;
+    cursor: pointer;
+}
+.botao-volta{
+    border: none;
+    background: none;
+    color: #9699ab;
+    transition: .3s ease;
+    font-weight: bolder;
+}
+.botao-volta:hover{
+    cursor: pointer;
+    color: #000;
+    
+}
+
+/************************** Parte da Informação ****************************/
+.informa{
+    margin-left: 3rem;
+    width: 55%;
+    margin-right: 3rem;
+    height: 100%;
+    
+    margin-top: 1.5rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.titulo{
+    font-size: 1.2rem;
+    margin-bottom: .2rem;
+}
+.texto{
+    font-size: .7rem;
+    color: #9699ab;
+    margin-bottom: 1.5rem;
+}
+
+
+/**** Etapa 1 - Informação Pessoal ****/
+ 
+
+.info-pessoal{
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+    position: absolute;
+    left: 0px;
+    margin-right: .5rem;
+}
+.info-pessoal .butons{
+    justify-content: end;
+}
+
+
+.text-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.text-input input{
+    width: 100%;
+    height: 35px;
+    padding-left: .7rem;
+    outline: none;
+    border-radius: .5rem;
+    border: 1px solid #d6d9e6;
+}
+.tiuto-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-input label{
+    font-size: .8rem;
+}
+.info-erro{
+    font-size: .7rem;
+    display: none;
+}
+
+
+/**************** Etapa 2 - info-plano *******************/
+.info-plano{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 530px;
+    transition: .4s ease;
+    margin-right: 4.5rem;
+}
+.planos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: .5rem;
+}
+
+.plano{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #473dff;
+    border-radius: .5rem;
+    flex: 1 1 7rem;
+    height: 150px;
+}
+
+.info{
+    display: flex;
+    flex-direction:column;
+}
+.info h2{
+    font-size: .7rem;
+}
+.preco{
+    font-size: .6rem;
+    color: #9699ab;
+}
+.info-year{
+    font-size: .6rem;
+}
+
+.mes-ano{
+    display: flex;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    background-color: #f0f6ff;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+.opcao{
+    display: flex;
+    gap: 1rem;
+}
+.opcao h3{
+    font-size: .8rem;
+    color: #9699ab;
+    font-weight: unset;
+}
+
+
+
+
+/******************* Etapa 3 - Adiconar Complementos de Games **********************************/
+.add-servico{
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+    position: absolute;
+    left: 530px;
+    margin-right: 6.5rem;
+}
+
+.complementos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.add-complemento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #473dff;
+    border-radius: .5rem;
+    margin-bottom: .7rem;
+}
+
+.add-complemento .info{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.add-complemento .info h2{
+    font-size: .7rem;
+}
+.add-complemento .info p{
+    font-size: .7rem;
+    color: #9699ab;
+}
+
+.add-complemento h3{
+    font-size: .8rem;
+    color: #473dff;
+}
+
+.add-servico .butons{
+    margin-top: 1.5rem;
+}
+
+
+/******************* Etapa 4 - finaliza**/
+.finaliza{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1rem;
+    position: absolute;
+    left: 530px;
+    transition: .3s ease;
+}
+.total-preco{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.total-preco h2{
+    font-size: .8rem;
+    color: #9699ab;
+    font-weight: unset;
+}
+
+.total-preco h1{
+    font-size: 1rem;
+    color: #473dff;
+}
+
+
+
+
+
+
+
+/*********************** Etapas *******************************/
+.etapas{
+    width: 35%;
+    background-image: url('imagens/bg-sidebar-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: .5rem;
+    padding: 1.5rem;
+}
+
+.steps-total{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.etapa{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+h4{
+    font-size: .5rem;
+    color: #d6d9e6;
+    font-weight: unset;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #bfe2fd;
+    color: #fff;
+    transition: .4s ease;
+}
+
+.circle.active{
+    color: #000;
+    background-color: #bfe2fd;
+}
+
+
+.info-etapa{
+    display: flex;
+    flex-direction: column;
+}
+
+small{
+    font-size: .7rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+
+
+/*************** Footter ***************/
+footer{
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    right: 0;
+    display: none;
+    background-color: #fff;
+}
+
+footer #footer1{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+footer #footer2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    display: none;
+}
+footer #footer3{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    display: none;
+}
+footer #footer4{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    display: none;
+}
+
+
+/***************************** Medias Queres **********/
+
+.etapas-mobile{
+    width: 100%;
+    background-image: url('imagens/bg-sidebar-mobile.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.etapas-mobile .steps-total{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 680px){
+    .etapas{
+        display: none;
+    }
+    .informa{
+        width: 100%;
+        overflow: auto;
+    }
+    .etapas-mobile{
+        display: block;
+    }
+    .container{
+        position: absolute;
+        top: 120px;
+        width: 90%;
+        height: 400px;
+        overflow: hidden;
+        padding: 0;
+    }
+    .planos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .plano{
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        justify-content: initial;
+        padding: .8rem;
+        gap: 1rem;
+    }
+    .butons{
+        display: none;
+    }
+    footer{
+        display: flex;
+    }
+}
+
+

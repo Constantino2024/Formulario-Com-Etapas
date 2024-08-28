@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario Com Etapas</title>
+</head>
+<body>
+
+    
+
+    <div class="page">
+        <div class="etapas-mobile">
+            <div class="steps-total">
+    
+                <div class="etapa"> <!--Etapa 1-->
+                    <div class="circle active">1</div>
+                </div>
+    
+                <div class="etapa"> <!--Etapa 2-->
+                    <div class="circle">2</div>
+                </div>
+    
+                <div class="etapa"> <!--Etapa 3-->
+                    <div class="circle">3</div>
+                </div>
+    
+                <div class="etapa"> <!--Etapa 4-->
+                    <div class="circle">4</div>
+                </div>
+    
+            </div>
+        </div>
+        
+        
+        <div class="container"><!--Inicio Container-->
+
+            <div class="etapas"><!--Inicio Etapas-->
+                <div class="steps-total">
+
+                    <div class="etapa"> <!--Etapa 1-->
+                        <div class="circle active" id="et1">1</div>
+                        <div class="info-etapa">
+                            <h4>Etapa 1</h4>
+                            <small>Seus Dados</small>
+                        </div>
+                    </div>
+
+                    <div class="etapa"> <!--Etapa 2-->
+                        <div class="circle">2</div>
+                        <div class="info-etapa">
+                            <h4>Etapa 2</h4>
+                            <small>Selec. Planos</small>
+                        </div>
+                    </div>
+
+                    <div class="etapa"> <!--Etapa 3-->
+                        <div class="circle">3</div>
+                        <div class="info-etapa">
+                            <h4>Etapa 3</h4>
+                            <small>Add Serivco</small>
+                        </div>
+                    </div>
+
+                    <div class="etapa"> <!--Etapa 4-->
+                        <div class="circle">4</div>
+                        <div class="info-etapa">
+                            <h4>Etapa 4</h4>
+                            <small>Finalizar</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--Fim Etapas-->
+
+            <div class="informa"><!--Inicio Informa-->
+
+                <form>
+                    <div class="info-pessoal" id="info-pessoal"><!--Inicio Info-Pessoal-->
+                        <h2 class="titulo">Informações Pessoais</h2>
+                        <p class="texto">Porfavor insere seu nome, email e Nº Telefone</p>
+
+                        <div class="text-input">
+                            <div class="tiuto-input">
+                                <label for="nome">Nome</label>
+                                <p id="info-erro1" class="info-erro">informe o nome</p>
+                            </div>
+                            <input type="text" name="" id="nome" placeholder="Digite seu nome">
+                        </div> <!--Text-Input-->
+
+                        <div class="text-input">
+                            <div class="tiuto-input">
+                                <label for="email">Email</label>
+                                <p id="info-erro2" class="info-erro">informe o email</p>
+                            </div>
+                            <input type="text" name="" id="email" placeholder="Digite seu Email">
+                        </div><!--Text-Input-->
+
+                        <div class="text-input">
+                            <div class="tiuto-input">
+                                <label for="telfone">Telefone</label>
+                                <p id="info-erro3" class="info-erro">informe o telefone</p>
+                            </div>
+                            <input type="text" name="" id="telfone" placeholder="Digite seu numero de Telefone">
+                        </div><!--Text-Input-->
+
+                        <div class="butons">
+                            <input type="button" class="botao" value="Avançar" id="next1">
+                        </div>
+                    </div><!--Fim Info-Pessoal -->
+
+                    <!------------------------ Inicio Info-Plano --------------------------------->
+                    <div class="info-plano absolute" id="info-plano">
+                        <h2 class="titulo">Seleciona Seu Plano</h2>
+                        <p class="texto">você tem a opção de faturamento mensal ou anual</p>
+
+                        <div class="planos">
+                            <div class="plano"><!--Primeiro Plano-->
+                                <div class="logo-img">
+                                    <img src="imagens/icon-arcade.svg" alt="logo arcade">
+                                </div>
+                                <div class="info">
+                                    <h2>Arcade</h2>
+                                    <p class="preco">$9/mo</p>
+                                    <p class="info-year">2 meses grates</p>
+                                </div>
+                            </div><!--Fim-->
+
+                            <div class="plano"><!--Segundo Plano-->
+                                <div class="logo-img">
+                                    <img src="imagens/icon-advanced.svg" alt="logo arcade">
+                                </div>
+                                <div class="info">
+                                    <h2>Avançado</h2>
+                                    <p class="preco">$12/mo</p>
+                                    <p class="info-year">2 meses grates</p>
+                                </div><!--Fim-->
+                            </div>
+
+                            <div class="plano"><!--Terceiro Plano-->
+                                <div class="logo-img">
+                                    <img src="imagens/icon-pro.svg" alt="logo arcade">
+                                </div>
+                                <div class="info">
+                                    <h2>Pro</h2>
+                                    <p class="preco">$15/mo</p>
+                                    <p class="info-year">2 meses grates</p>
+                                </div>
+                            </div><!--Fim Plano-->
+
+                        </div><!--Fim Planos-->
+
+                        <div class="mes-ano">
+                            <div class="opcao">
+                                <h3 class="mes">Mes</h3>
+                                <input type="checkbox">
+                                <h3 class="ano">Ano</h3>
+                            </div>
+                        </div>
+
+                        <div class="butons">
+                            <input type="button" class="botao-volta" value="Voltar" id="back1">
+                            <input type="button" class="botao" value="Avançar" id="next2">
+                        </div>
+                    </div><!--Fim Info-Plano-->
+
+
+
+                    <!----------------- Inicio Add Servico ---------------------------->
+                    <div class="add-servico absolute" id="add-servico">
+
+                        <h2 class="titulo">Escolha complementos</h2>
+                        <p class="texto">Os complementos ajudam a melhorar sua experiência de jogo</p>
+
+                        <div class="complementos">
+                            
+                            <div class="add-complemento"><!--Primeiro Complemento-->
+                                <div class="info">
+                                    <input type="checkbox" data-price="1">
+                                    <div class="info-add">
+                                        <h2>Serviço on-line</h2>
+                                        <p>acesso a jogos multijogador</p>
+                                    </div>
+                                </div>
+                                <h3 id="valor">+$1/mo</h3>
+                            </div><!--Fim-->
+
+                            <div class="add-complemento"><!--Primeiro Complemento-->
+                                <div class="info">
+                                    <input type="checkbox" data-price="2">
+                                    <div class="info-add">
+                                        <h2>Armazenamento maior</h2>
+                                        <p>1 TB extra de economia na nuvem</p>
+                                    </div>
+                                </div>
+                                <h3 id="valor" >+$2/mo</h3>
+                            </div><!--Fim-->
+
+                            <div class="add-complemento"><!--Primeiro Complemento-->
+                                <div class="info">
+                                    <input type="checkbox" data-price="2">
+                                    <div class="info-add">
+                                        <h2>Perfil personalizável</h2>
+                                        <p>Tema personalizado em seu perfil</p>
+                                    </div>
+                                </div>
+                                <h3 id="valor">+$2/mo</h3>
+                            </div><!--Fim-->
+
+                        </div><!--Fim Complementos-->
+
+
+                        <div class="butons">
+                            <input type="button" class="botao-volta" value="Voltar" id="back2">
+                            <input type="button" class="botao" value="Avançar" id="next3">
+                        </div>
+
+                    </div>
+                    <!------- Fim Add Servico -------------->
+
+
+                    <!------------ Inicio Finalizar ------------->
+                    <div class="finaliza" id="finaliza">
+                        <h2 class="titulo">Terminando</h2>
+                        <p class="texto">Verifique duas vezes se tudo está bem antes de confirmar</p>
+
+                        <div class="content"></div>
+
+                        <div class="total-preco">
+                            <h2>Total ( <span id="tipo"></span> )</h2>
+                            <h1 class="total" id="total">$0</h1>
+                        </div>
+
+                        <div class="butons">
+                            <input type="button" class="botao-volta" value="Voltar" id="back3">
+                            <input type="button" class="botao" value="Avançar" id="next4">
+                        </div>
+                    </div><!--Fim Finalizar-->
+                </form>
+
+            </div><!--Fim Informa-->
+
+        </div><!--Fim Container-->
+
+        <footer>
+            <div id="footer1">
+                <input type="button" class="botao" value="Avançar" id="next-footer1">
+            </div>
+            <div id="footer2">
+                <input type="button" class="botao-volta" value="Voltar" id="back-footer1">
+                <input type="button" class="botao" value="Avançar" id="next-footer2">
+            </div>
+            <div id="footer3">
+                <input type="button" class="botao-volta" value="Voltar" id="back-footer2">
+                <input type="button" class="botao" value="Avançar" id="next-footer3">
+            </div>
+            <div id="footer4">
+                <input type="button" class="botao-volta" value="Voltar" id="back-footer3">
+                <input type="button" class="botao" value="Avançar" id="next-footer4">
+            </div>
+        </footer>
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
